@@ -1,0 +1,27 @@
+GET http://localhost:1200/users
+
+###
+GET http://localhost:1200/users/1
+
+###
+POST http://localhost:1200/users
+Content-Type: application/json
+
+{
+    "name": "bimoupdate",
+    "email": "1908.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:1200/users/3
+Content-Type: application/json
+
+{
+    "name": "wahyu123",
+    "email": "1965@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:1200/users/5
